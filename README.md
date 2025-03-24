@@ -8,6 +8,8 @@
 ![Скриншот таблицы пользователей](https://github.com/yourusername/yourrepository/raw/main/path/to/screenshot1.png)
 
 ## Скриншот окна «Обозреватель тестов»
+![image](https://github.com/user-attachments/assets/7b5f7eb7-911f-4257-821e-737f15622b51)
+
 
 ![Обозреватель тестов](https://github.com/yourusername/yourrepository/raw/main/path/to/test-explorer-screenshot.png)
 
