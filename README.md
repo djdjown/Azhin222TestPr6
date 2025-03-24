@@ -4,6 +4,8 @@
 # Автоматизированные тестирование модулей авторизации и регистрации пользователей
 
 ## Скриншот содержимого таблицы с пользователями из СУБД Microsoft SQL Server
+![image](https://github.com/user-attachments/assets/20f64680-2e6c-4f0f-93dd-fe1357c94e09)
+
 
 ![Скриншот таблицы пользователей](https://github.com/yourusername/yourrepository/raw/main/path/to/screenshot1.png)
 
