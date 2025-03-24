@@ -22,7 +22,6 @@
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WpfApp3;
 using WpfApp9;
 
 namespace UnitTestProject
@@ -45,7 +44,6 @@ namespace UnitTestProject
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WpfApp3;
 using WpfApp9;
 
 namespace UnitTestProject
