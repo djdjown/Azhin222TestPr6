@@ -92,18 +92,6 @@ namespace UnitTestProject
 
 ## SQL-скрипт базы данных скачать тут:
 
-[[```sql
-CREATE TABLE Users (
-    Id INT PRIMARY KEY IDENTITY,
-    Username NVARCHAR(50) UNIQUE NOT NULL,
-    Password NVARCHAR(100) NOT NULL,
-    CreatedAt DATETIME NOT NULL
-);
-```](https://github.com/djdjown/Azhin222TestPr6)](https://github.com/djdjown/Azhin222TestPr6)
 
-
-
-- [Ссылка на репозиторий Git](https://github.com/yourusername/yourrepository.git)
-```
-
+https://github.com/djdjown/Azhin222TestPr6
 
