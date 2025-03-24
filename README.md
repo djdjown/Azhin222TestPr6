@@ -3,7 +3,7 @@
 
 ## Скриншот содержимого таблицы с пользователями из СУБД Microsoft SQL Server
 
-(https://github.com/user-attachments/assets/b5b97110-846a-4877-b0fb-10098d67801c)
+![Скриншот таблицы пользователей]![image](https://github.com/user-attachments/assets/b5b97110-846a-4877-b0fb-10098d67801c)
 
 
 ## Скриншот окна «Обозреватель тестов»
