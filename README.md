@@ -7,11 +7,8 @@
 
 
 ## Скриншот окна «Обозреватель тестов»
-![image](https://github.com/user-attachments/assets/7b5f7eb7-911f-4257-821e-737f15622b51)
-
-
-![Обозреватель тестов](https://github.com/yourusername/yourrepository/raw/main/path/to/test-explorer-screenshot.png)
-
+![image](![image](https://github.com/user-attachments/assets/c0838208-4503-4ffa-9c58-a62b39a388dd)
+)
 ## Вывод о проведенном тестировании
 
 В данном отчете представлено подробное описание результатов проведенного тестирования:
