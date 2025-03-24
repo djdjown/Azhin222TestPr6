@@ -1,5 +1,5 @@
 <p align="center">
-<strong ПРАКТИЧЕСКАЯ РАБОТА /strong>
+<strong ПРАКТИЧЕСКАЯ РАБОТА </strong>
 <p align="center">
 
 #         СОЗДАНИЕ АВТОМАТИЗИРОВАННОГО UNIT-ТЕСТА
