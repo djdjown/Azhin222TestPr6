@@ -3,7 +3,8 @@
 
 ## Скриншот содержимого таблицы с пользователями из СУБД Microsoft SQL Server
 
-![Скриншот таблицы пользователей](https://github.com/yourusername/yourrepository/raw/main/path/to/screenshot1.png)
+![Скриншот таблицы пользователей]![image](https://github.com/user-attachments/assets/b5b97110-846a-4877-b0fb-10098d67801c)
+
 
 ## Скриншот окна «Обозреватель тестов»
 ![image](https://github.com/user-attachments/assets/7b5f7eb7-911f-4257-821e-737f15622b51)
@@ -17,7 +18,7 @@
 - **Тест 1**: *Пустые данные* - Пройден успешно.
 - **Тест 2**: *Несуществующий пользователь* - Пройден успешно.
 - **Тест 3**: *Существующий пользователь* - Пройден успешно.
-- **Тест 4**: *Неудачи成功 login* - Пройден успешно.
+- **Тест 4**: *Не верный логин* - Пройден успешно.
 - **Тест 5**: *Регистрация пользователя* - Пройден успешно.
 
 ## Коды тестов
@@ -27,6 +28,7 @@
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WpfApp3;
+using WpfApp9;
 
 namespace UnitTestProject
 {
@@ -39,7 +41,7 @@ namespace UnitTestProject
             MainWindow mainWindow = new MainWindow();
             Assert.IsFalse(mainWindow.Auth("", ""));  // Пустые поля
             Assert.IsFalse(mainWindow.Auth("wrongUser", "wrongPass")); // Несуществующий пользователь
-            Assert.IsTrue(mainWindow.Auth("existingUser", "correctPassword")); // Должно пройти, если такой пользователь есть
+            Assert.IsTrue(mainWindow.Auth("azhin", "123456")); // Должно пройти, если такой пользователь есть
         }
     }
 }
@@ -49,6 +51,7 @@ namespace UnitTestProject
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WpfApp3;
+using WpfApp9;
 
 namespace UnitTestProject
 {
@@ -56,21 +59,22 @@ namespace UnitTestProject
     public class UnitTest2
     {
         [TestMethod]
-        public void AuthTest()
+        public void RegistrationTest()
         {
-            MainWindow mainWindow = new MainWindow();
-            Assert.IsFalse(mainWindow.Auth("", ""));  // Пустые данные
-            Assert.IsFalse(mainWindow.Auth("wrongUser", "wrongPass")); // Несуществующий пользователь
-            Assert.IsTrue(mainWindow.Auth("existingUser", "correctPassword")); // Должно пройти, если такой пользователь есть
+            MainWindow main = new MainWindow();
+            Assert.IsFalse(main.Register("", ""));  // Пустые поля
+            Assert.IsFalse(main.Register("newUser", "123")); // Слишком короткий пароль
+            Assert.IsTrue(main.Register("uniqueUser", "securePassword123")); // Должно пройти
         }
     }
 }
+
 ```
 ### UnitTest3.cs
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WpfApp3;
+using WpfApp9;
 
 namespace UnitTestProject
 {
@@ -78,54 +82,13 @@ namespace UnitTestProject
     public class UnitTest3
     {
         [TestMethod]
-        public void AuthTestSuccess()
-        {
-            MainWindow mainWindow = new MainWindow();
-            Assert.IsTrue(mainWindow.Auth("existingUser", "correctPassword")); // Должно пройти успешно
-        }
-    }
-}
-```
-### UnitTest4.cs
-
-```csharp
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WpfApp3;
-
-namespace UnitTestProject
-{
-    [TestClass]
-    public class UnitTest4
-    {
-        [TestMethod]
-        public void AuthTestFail()
-        {
-            MainWindow mainWindow = new MainWindow();
-            Assert.IsFalse(mainWindow.Auth("wrongUser", "wrongPass")); // Несуществующий пользователь
-            Assert.IsFalse(mainWindow.Auth("", "")); // Пустые данные
-        }
-    }
-}
-```
-### UnitTest5.cs
-
-```csharp
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WpfApp3;
-
-namespace UnitTestProject
-{
-    [TestClass]
-    public class UnitTest5
-    {
-        [TestMethod]
         public void RegistrationTest()
         {
-            MainWindow mainWindow = new MainWindow();
-            string newUsername = "new_user";
-            string newPassword = "new_password";
-            
-            bool result = mainWindow.Register(newUsername, newPassword);
+            MainWindow main = new MainWindow();
+            string newUsername = "azhin9";
+            string newPassword = "1234567";
+
+            bool result = main.Register(newUsername, newPassword);
             Assert.IsTrue(result);
         }
     }
@@ -148,4 +111,4 @@ CREATE TABLE Users (
 - [Ссылка на репозиторий Git](https://github.com/yourusername/yourrepository.git)
 ```
 
-Этот `README.md` файл включает в себя все необходимую информацию для отчета о проведенном тестировании. Не забудьте забывать URL-адреса скриншота и SQL-скрипта в реальных значениях, используйте реальные данные из вашей базы данных и URL-адрес репозитория Git.
+
