@@ -143,7 +143,7 @@ CREATE TABLE Users (
 );
 ```
 
-## Ссылка на программное решение в СКВ Git
+
 
 - [Ссылка на репозиторий Git](https://github.com/yourusername/yourrepository.git)
 ```
